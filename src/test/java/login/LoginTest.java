@@ -26,7 +26,14 @@ public class LoginTest  {
 		
 		  // Navigate to a web page
 	    driver.get("http://localhost:8081/WebProject1/login.jsp");
-	 
+
+	    try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    
 	    // Perform actions on HTML elements, entering text and submitting the form
 	    WebElement usernameElement     = driver.findElement(By.name("username"));
 	    WebElement passwordElement     = driver.findElement(By.name("password"));
@@ -68,7 +75,7 @@ public class LoginTest  {
 	
 	
   public static void main(String[] args) {
- 
+ 	  
 	  System.setProperty("webdriver.gecko.driver", "c:\\geckodriver-v0.20.0-win64\\geckodriver.exe");
 		
     // Create an instance of the driver
@@ -77,6 +84,12 @@ public class LoginTest  {
     // Navigate to a web page
     driver.get("localhost:8081/WebProject1/login.jsp");
  
+    try {
+		Thread.sleep(10000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
     // Perform actions on HTML elements, entering text and submitting the form
     WebElement usernameElement     = driver.findElement(By.name("username"));
     WebElement passwordElement     = driver.findElement(By.name("password"));
