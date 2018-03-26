@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="1" name="Suite" annotations="JDK" parallel="tests">
-  <test thread-count="5" name="LoginTest">
+<suite name="suite" parallel="false" preserve-order="true" thread-count="1">
+  <test name="LoginTest">
     <classes>
       <class name="login.LoginTest"/>
     </classes>
   </test> <!-- LoginTest -->
-  <test thread-count="6" name="TestClick">
+<!-- 
+  <test name="TestClick">
     <classes>
       <class name="login.LoginClick"/>
     </classes>
-  </test> <!-- TestClick -->
+  </test> 
+   -->
 </suite> <!-- Suite -->
