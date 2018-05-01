@@ -55,6 +55,10 @@ public class LoginTest  {
         
 	    // Run a test
 	    String message                 = messageElement.getText();
+
+		System.out.println("Actul: " + message);
+	    System.out.println("Expected: " + successMsg);
+		
 	    String successMsg             = "This is valid user";
 	    AssertJUnit.assertTrue(true); 
 	    AssertJUnit.assertEquals (message, successMsg);

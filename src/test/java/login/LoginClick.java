@@ -56,9 +56,14 @@ public class LoginClick  {
         
 	    // Run a test
 	    String message                 = messageElement.getText();
+		Assert.assertTrue(true); 
 	    String successMsg             = "This is In-valid user";
-	    Assert.assertTrue(true); 
-	    Assert.assertEquals (message, successMsg);
+		
+		System.out.println("Actul: " + message);
+	    System.out.println("Expected: " + successMsg);
+		
+	    
+		Assert.assertEquals (message, successMsg);
 	 		
 		} 
 	    catch (InterruptedException e) {
