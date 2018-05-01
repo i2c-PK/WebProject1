@@ -19,12 +19,12 @@ public class LoginTest  {
 	private WebDriver driver;		
 	
 	@Test				
-	public void testLogin() throws InterruptedException {	
+	public void validUserLoginTest() throws InterruptedException {	
 		/*driver.get("http://demo.guru99.com/test/guru99home/");  
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains("Demo Guru99 Page"));*/
 
-		System.out.println("In testLogin()");
+		System.out.println("In validUserLoginTest()");
 	    try {
 
 		  // Navigate to a web page
@@ -81,9 +81,9 @@ public class LoginTest  {
 	
 	
 	
-	public void testClick() throws InterruptedException {	
+	public void InValidUserLoginTest() throws InterruptedException {	
 //@Test					
-	System.out.println("In testClick()");
+	System.out.println("In InValidUserLoginTest()");
 	    try {
 
 		  // Navigate to a web page
@@ -112,10 +112,14 @@ public class LoginTest  {
 	    //driver.findElement(By.xpath(".//*[@id='login']/a")).click();
 
         
-	    // Run a test
-	    String message                 = messageElement.getText();
-	    String successMsg             = "This is valid user";
+	     String message                 = messageElement.getText();
 	    AssertJUnit.assertTrue(true); 
+	    String successMsg             = "This is In-valid user";
+		
+		System.out.println("Actul: " + message);
+	    System.out.println("Expected: " + successMsg);
+		
+	    
 	    AssertJUnit.assertEquals (message, successMsg);
 	 		
 		} 

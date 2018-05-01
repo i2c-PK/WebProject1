@@ -20,8 +20,9 @@ public class LoginClick  {
 	
 	private WebDriver driver;		
 	
-	@Test				
-	public void testLogin() throws InterruptedException {	
+					
+	public void testLogin() throws InterruptedException {
+		//@Test
 		/*driver.get("http://demo.guru99.com/test/guru99home/");  
 		String title = driver.getTitle();				 
 		Assert.assertTrue(title.contains("Demo Guru99 Page"));*/
