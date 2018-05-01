@@ -80,9 +80,10 @@ public class LoginTest  {
 	}	
 	
 	
-	@Test				
+	
 	public void testClick() throws InterruptedException {	
-		System.out.println("In testClick()");
+//@Test					
+	System.out.println("In testClick()");
 	    try {
 
 		  // Navigate to a web page
