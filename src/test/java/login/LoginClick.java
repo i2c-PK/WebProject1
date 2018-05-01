@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
@@ -56,14 +57,14 @@ public class LoginClick  {
         
 	    // Run a test
 	    String message                 = messageElement.getText();
-		Assert.assertTrue(true); 
+	    AssertJUnit.assertTrue(true); 
 	    String successMsg             = "This is In-valid user";
 		
 		System.out.println("Actul: " + message);
 	    System.out.println("Expected: " + successMsg);
 		
 	    
-		Assert.assertEquals (message, successMsg);
+	    AssertJUnit.assertEquals (message, successMsg);
 	 		
 		} 
 	    catch (InterruptedException e) {
