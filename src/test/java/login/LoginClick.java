@@ -56,7 +56,7 @@ public class LoginClick  {
         
 	    // Run a test
 	    String message                 = messageElement.getText();
-	    String successMsg             = "This is valid user";
+	    String successMsg             = "This is In-valid user";
 	    Assert.assertTrue(true); 
 	    Assert.assertEquals (message, successMsg);
 	 		
