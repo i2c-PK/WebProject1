@@ -80,9 +80,9 @@ public class LoginTest  {
 	}	
 	
 	
-	
+@Test	
 	public void InValidUserLoginTest() throws InterruptedException {	
-//@Test					
+					
 	System.out.println("In InValidUserLoginTest()");
 	    try {
 
