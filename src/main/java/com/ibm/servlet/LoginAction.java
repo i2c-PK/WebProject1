@@ -29,7 +29,7 @@ public class LoginAction extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		//String unUserVariable = new String("unused");
+		String unUserVariable = new String("unused");
 		String userName = request.getParameter("username");
 		String password = request.getParameter("password");
 		
